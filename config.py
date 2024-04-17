@@ -81,8 +81,8 @@ class Config:
     #ALLOWED_USERS = [x.strip(' ') for x in os.environ.get('ALLOWED_USERS','1098504493').split(',')]
 
     DOWNLOAD_DIR = 'downloads'
-    OWNER_ID = os.environ.get("OWNER_ID", '1276627253') 
-    OWNER_ID="mmagneto"
+    OWNER_ID = os.environ.get("OWNER_ID", '5054973867') 
+    OWNER_ID="baytyler"
 
 
     PRE_LOG = int(os.environ.get("PRE_LOG", ""))
@@ -91,5 +91,4 @@ class Config:
         userbot = Client(name='userbot', api_id=APP_ID, api_hash=API_HASH, session_string=STRING_SESSION, parse_mode=enums.ParseMode.HTML)
         userbot.start()
         me = userbot.get_me()
-        userbot.send_message(OWNER_ID, f"Userbot Bașlatıldı..\n\n**Premium Durumu**: {me.is_premium}\n**Ad**: {me.first_name}\n**id**: {me.id}")
-        print("Userbot Başlatıldı 4 gb yükleme aktif")
+        
