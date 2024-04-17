@@ -1,0 +1,9 @@
+pyrogram
+tgcrypto==1.2.2
+requests==2.24.0
+aiofiles
+hachoir
+ffmpeg-python
+asyncio
+python-dotenv
+bs4
