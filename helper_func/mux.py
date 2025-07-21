@@ -113,6 +113,7 @@ async def hardmux_vid(vid_filename, sub_filename, msg):
             '-map','0:a:0?',
             '-preset','fast',
             '-movflags', '+faststart',
+            '-threads', '0',
             '-y',out_location
             ]
     process = await asyncio.create_subprocess_exec(
